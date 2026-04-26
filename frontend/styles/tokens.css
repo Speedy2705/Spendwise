@@ -1,0 +1,39 @@
+:root {
+  --font-sans: "Inter", "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Menlo, Monaco, Consolas, monospace;
+
+  --color-bg: #f4f6fa;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f8fafc;
+  --color-text: #0f172a;
+  --color-text-soft: #5b667a;
+
+  --color-primary: #1d3557;
+  --color-primary-strong: #142742;
+  --color-primary-soft: #e8eef7;
+
+  --color-success: #2f7d58;
+  --color-success-soft: #e6f5ec;
+
+  --color-danger: #b42318;
+  --color-danger-soft: #fdebec;
+
+  --color-border: #dbe2ea;
+  --color-row-alt: #f8fafc;
+
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+
+  --shadow-soft: 0 10px 24px rgba(15, 23, 42, 0.08);
+  --shadow-navbar: 0 4px 14px rgba(15, 23, 42, 0.1);
+  --shadow-focus: 0 0 0 3px rgba(29, 53, 87, 0.2);
+}

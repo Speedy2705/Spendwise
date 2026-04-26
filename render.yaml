@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: expense-tracker-api
+    env: docker
+    rootDir: backend
+    dockerfilePath: Dockerfile
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: JWT_SECRET
+        generateValue: true
+      - key: DATABASE_URL
+        value: sqlite:////app/data/expense_tracker.db
+      - key: ACCESS_TOKEN_EXPIRE_MINUTES
+        value: "120"
+      - key: ALLOWED_ORIGINS
+        value: https://expense-tracker-frontend.onrender.com
+
+  - type: web
+    name: expense-tracker-frontend
+    env: docker
+    rootDir: frontend
+    plan: free
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: NEXT_PUBLIC_API_BASE_URL
+        value: https://expense-tracker-api.onrender.com
